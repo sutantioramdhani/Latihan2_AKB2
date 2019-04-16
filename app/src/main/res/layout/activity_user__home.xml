@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/ImgBgHome"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/ic_header_profile"
+            android:scaleType="fitXY"
+            android:baseline="5dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@color/lingkarprofil"
+            android:layout_below="@+id/ImgBgHome"/>
+
+        <ImageView
+            android:id="@+id/ImgMenu_Side"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_side_menu"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_notification"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:id="@+id/ImgProfilSendiri"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/profil_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_profile_default_large"/>
+
+        <TextView
+            android:id="@+id/TvNamaSendiri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/NamaSendiri"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/AquaDanon"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ImgProfilSendiri"/>
+
+        <TextView
+            android:id="@+id/TvBloodTypeSaya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/BloodyTypeSendiri"
+            android:gravity="center"
+            android:layout_below="@+id/TvNamaSendiri"/>
+
+        <View
+            android:id="@+id/View1"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/whitethree"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/TvBloodTypeSaya"/>
+
+        <TextView
+            android:id="@+id/TvAngkaBloodGive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="75"
+            android:textSize="30dp"
+            android:textColor="@color/AquaDanon"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/View1"/>
+
+        <TextView
+            android:id="@+id/TvAngkaBloodReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="30dp"
+            android:textColor="@color/AquaDanon"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/TvAngkaBloodGive"
+            android:layout_below="@+id/View1"/>
+
+        <TextView
+            android:id="@+id/TvAngkathanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="330"
+            android:textSize="30dp"
+            android:textColor="@color/AquaDanon"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/TvAngkaBloodReceived"
+            android:layout_below="@+id/View1"/>
+
+        <TextView
+            android:id="@+id/TvBloodGive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Give"
+            android:layout_marginStart="33dp"
+            android:layout_below="@id/TvAngkaBloodGive"/>
+        <TextView
+            android:id="@+id/TvBloodReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Received"
+            android:layout_marginStart="45dp"
+            android:layout_toRightOf="@id/TvBloodGive"
+            android:layout_below="@id/TvAngkaBloodGive" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanks"
+            android:layout_marginStart="55dp"
+            android:layout_toRightOf="@id/TvBloodReceived"
+            android:layout_below="@id/TvAngkaBloodGive" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/whitethree"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/TvBloodGive"/>
+
+        <Button
+            android:id="@+id/BtnSearchDonor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Donor"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/ic_search_donor"
+            android:background="@drawable/btnhomeuse"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_below="@+id/view2"
+            />
+
+        <Button
+            android:id="@+id/BtnBloodNeeded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Needed"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/ic_blood_needed"
+            android:background="@drawable/btnhomeuse"
+            android:layout_below="@+id/view2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/TvSearchDonor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Search donor near you"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/BtnSearchDonor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="4 User need blood"
+            android:layout_marginEnd="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/BtnBloodNeeded"/>
+
+        <Button
+            android:id="@+id/BtnMesagge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/ic_message"
+            android:background="@drawable/btnhomeuse"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/TvSearchDonor" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donor History"
+            android:textAllCaps="false"
+            android:drawableTop="@drawable/ic_donor_history"
+            android:background="@drawable/btnhomeuse"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/TvSearchDonor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="5 New Messages"
+            android:layout_marginStart="46dp"
+            android:layout_below="@id/BtnMesagge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="5 Gives, 2 Received"
+            android:layout_marginEnd="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/BtnMesagge" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

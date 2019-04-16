@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verify_Account">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/AquaDanon"
+        android:paddingTop="100dp">
+
+        <TextView
+            android:id="@+id/TvVerifyAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/VerifyAccount"
+            android:gravity="center"
+            android:textColor="@color/EditextBlue"
+            android:textSize="30dp"
+            />
+
+        <TextView
+            android:id="@+id/TvTextVerifyAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/TextVerifyAcount"
+            android:gravity="center"
+            android:textColor="@color/EditextBlue"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/TvVerifyAccount" />
+
+        <EditText
+            android:id="@+id/EdtVerifyAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/EdtVerifyAccount"
+            android:gravity="center"
+            android:textColorHint="@color/EditextBlue"
+            android:backgroundTint="@color/EditextBlue"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/TvTextVerifyAccount"/>
+
+        <Button
+            android:id="@+id/BtnSendVA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:textColor="@color/EditextBlue"
+            android:background="@drawable/buttonmain"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/EdtVerifyAccount" />
+
+        <TextView
+            android:id="@+id/TvTextDoesnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TextVerifyAccountdoesnt"
+            android:textColor="@color/EditextBlue"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="100dp"
+            android:layout_below="@+id/BtnSendVA"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend"
+            android:textColor="@color/EditextBlue"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/TvTextDoesnt"
+            android:layout_below="@+id/BtnSendVA"
+            />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

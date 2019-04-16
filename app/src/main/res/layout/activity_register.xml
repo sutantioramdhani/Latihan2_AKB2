@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_header">
+
+        <ImageButton
+            android:id="@+id/BtnBackRegister"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="fitXY"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/ic_header_back"
+            android:background="@drawable/headerback"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="25dp"
+            android:textColor="@color/textheaderregister"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="15dp"
+            android:layout_toRightOf="@+id/BtnBackRegister"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/EtdUsernameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <EditText
+            android:id="@+id/EdtEmailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/EtdUsernameRegister" />
+
+        <EditText
+            android:id="@+id/EdtPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/EdtEmailRegister"
+            />
+
+        <RadioButton
+            android:id="@+id/RdoMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Male"
+            android:layout_marginStart="30dp"
+            android:layout_below="@id/EdtPhoneNumber"/>
+
+        <RadioButton
+            android:id="@+id/RdoFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Female"
+            android:layout_marginStart="100dp"
+            android:layout_below="@id/EdtPhoneNumber"
+            android:layout_toRightOf="@id/RdoMale" />
+
+        <EditText
+            android:id="@+id/SpnBloodType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Blood Type       "
+            android:drawableEnd="@drawable/ic_register_dropdown"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/RdoMale"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Reshus        "
+            android:drawableEnd="@drawable/ic_register_dropdown"
+            android:layout_below="@id/RdoFemale"
+            android:layout_toRightOf="@id/SpnBloodType"
+            android:layout_marginStart="30dp"/>
+
+        <EditText
+            android:id="@+id/EdtPasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/SpnBloodType" />
+
+        <EditText
+            android:id="@+id/EdtRePasswordReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Retype Password"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/EdtPasswordRegister"
+            />
+
+        <RadioButton
+            android:id="@+id/RdoPersonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Personal"
+            android:layout_marginStart="30dp"
+            android:layout_below="@+id/EdtRePasswordReg"/>
+
+        <RadioButton
+            android:id="@+id/RdoOrganization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Organization"
+            android:layout_marginStart="80dp"
+            android:layout_below="@+id/EdtRePasswordReg"
+            android:layout_toRightOf="@id/RdoPersonal"
+            />
+        <EditText
+            android:id="@+id/SpnJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Job"
+            android:drawableEnd="@drawable/ic_register_dropdown"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/RdoPersonal" />
+
+        <EditText
+            android:id="@+id/EdtHomeAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Home Address"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/SpnJob"/>
+
+        <EditText
+            android:id="@+id/SpnDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Default Location"
+            android:drawableEnd="@drawable/ic_blood_needed_location"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/EdtHomeAddress"/>
+
+        <CheckBox
+            android:id="@+id/CbTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Terms"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/SpnDestination"/>
+
+        <Button
+            android:id="@+id/BtnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:background="@drawable/buttonmain"
+            android:textColor="@color/TextbuttonRegister"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/CbTerms" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

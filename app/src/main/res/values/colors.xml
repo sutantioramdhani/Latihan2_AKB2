@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="AquaDanon">#40B4E7</color>
+    <color name="whitethree">#f3f3f3</color>
+    <color name="EditextBlue">#CAE9F8</color>
+    <color name="textheaderregister">#F6FCFE</color>
+    <color name="TextbuttonRegister">#96D4F2</color>
+    <color name="lingkarprofil">#E7E8EA</color>
+</resources>

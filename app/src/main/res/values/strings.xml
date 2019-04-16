@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Latihan2</string>
+    <string name="Facebook">CONNECT TO FACEBOOK</string>
+    <string name="activities">"Doesn't have Account ? "</string>
+    <string name="register">Register</string>
+    <string name="title_activity_register">Register</string>
+
+    <string-array name="Blood_Type">
+        <item name="A" />
+        <item name="B" />
+        <item name="O" />
+        <item name="AB" />
+    </string-array>
+
+    <string name="Terms">Agree with Terms and Condition</string>
+    <string name="Almost">Almost There</string>
+    <string name="TextAlmost">Thank you for Registering with us. One More\nStep, you need to Check your Email\nto Active your Account</string>
+
+    <string name="VerifyAccount">Verify your Account</string>
+    <string name="TextVerifyAcount">We have send verification code to your email</string>
+    <string name="EdtVerifyAccount">enter verification code here...</string>
+    <string name="TextVerifyAccountdoesnt">"doesn't get the code ? "</string>
+
+    <string name="NamaSendiri">Sutantio Ramdhani</string>
+    <string name="BloodyTypeSendiri">Blood type : O</string>
+
+</resources>
+
